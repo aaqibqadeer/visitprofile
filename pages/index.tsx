@@ -1,33 +1,31 @@
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
+import Head from "next/head";
+import { profile } from "@/lib/profile";
+import { ActionProvider } from "@/components/action/action-provider";
+import { ProfileCard } from "@/components/profile/profile-card";
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-8 bg-background p-8">
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-center"
-      >
-        <h1 className="text-4xl font-bold tracking-tight text-foreground">
-          Next.js + Tailwind + shadcn/ui + Framer Motion
-        </h1>
-        <p className="mt-4 text-lg text-muted-foreground">
-          Your project is ready to go.
-        </p>
-      </motion.div>
+  const fullName = `${profile.name.first} ${profile.name.last}`;
 
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.4, delay: 0.3 }}
-        className="flex gap-4"
-      >
-        <Button>Get Started</Button>
-        <Button variant="outline">Learn More</Button>
-        <Button variant="ghost">Docs</Button>
-      </motion.div>
-    </main>
-  )
+  return (
+    <>
+      <Head>
+        <title>{`${fullName} · ${profile.company}`}</title>
+        <meta name="description" content={profile.tagline} />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+      </Head>
+
+      {/*
+        Stage: neutral backdrop on wide screens. The card itself takes the full
+        viewport on mobile, and a centred, full-height phone-width column on
+        larger widths. Same layout everywhere — only the framing changes.
+      */}
+      <main className="grid h-[100svh] w-full place-items-center bg-stage">
+        <div className="relative h-[100svh] w-full overflow-hidden bg-paper sm:h-[min(100svh,880px)] sm:w-[420px] sm:rounded-[2.25rem] sm:shadow-2xl">
+          <ActionProvider>
+            <ProfileCard profile={profile} />
+          </ActionProvider>
+        </div>
+      </main>
+    </>
+  );
 }
