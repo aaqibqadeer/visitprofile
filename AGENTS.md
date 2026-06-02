@@ -29,13 +29,29 @@ layout now.
 See `docs/PROJECT_GUIDE.md` for architecture and `docs/CODING_GUIDELINES.md`
 for conventions. Follow them.
 
+## Where things live
+
+- **Content & theming:** `data/` — `data/users/*` (one `Profile` each, served at
+  `/<slug>`), `data/themes.ts` (themes + readability, the one file to re-skin),
+  `data/types.ts` (domain types).
+- **Behaviour:** `lib/actions.ts` (Action union + `A.*` factories), the runner in
+  `components/action/action-provider.tsx`.
+- **UI:** `components/profile/*` (home pieces), `components/sections/*` (sheet
+  content), `components/ui/sheet.tsx`, `components/icons.tsx` (brand glyphs).
+
 ## Non-negotiables
 
 - **Keep the home screen non-scrollable.** `body` is `overflow: hidden`; fit
-  content, don't add scroll. Sheets manage their own scroll.
+  content, don't add scroll. Long lists/catalogues go in **sheets**, not on the
+  home column. Sheets manage their own scroll.
+- **Same layout at every width** — full-bleed mobile, centred **full-height**
+  column on desktop, flush edges (no rounded "phone" frame). Don't restructure
+  per breakpoint.
 - **Components stay small and presentational.** One responsibility each, props
   in, no data fetching inside leaf components. Copy/data comes from
-  `lib/profile.ts`.
+  `data/users/*`; never hard-code user-facing copy in components.
+- **Style via theme tokens** (`bg-paper`, `text-ink`, `bg-accent`, …) defined in
+  `data/themes.ts` — not raw hex. Add a token/theme there if you need one.
 - **Buttons never encode behaviour.** Use `<ActionButton action={…}>`. To add a
   behaviour, add an `Action` variant in `lib/actions.ts` and a case in the
   runner (`components/action/action-provider.tsx`) — never wire `onClick`

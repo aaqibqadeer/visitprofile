@@ -1,15 +1,9 @@
-import type { Action } from "@/lib/actions";
-import type { IconType } from "@/components/icons";
+import type { LinkItem } from "@/data/types";
 import { ActionButton } from "@/components/action/action-button";
 
-export type ActionTileProps = {
-  icon: IconType;
-  label: string;
-  action: Action;
-};
-
-/** One square in the contact row (Call / Email / Message / LinkedIn). */
-export function ActionTile({ icon: Icon, label, action }: ActionTileProps) {
+/** One square in a tile row (icon + short label) bound to an action. */
+export function ActionTile({ item }: { item: LinkItem }) {
+  const { icon: Icon, label, action } = item;
   return (
     <ActionButton
       action={action}
@@ -22,12 +16,15 @@ export function ActionTile({ icon: Icon, label, action }: ActionTileProps) {
   );
 }
 
-/** The 4-up grid of contact tiles. */
-export function ActionGrid({ tiles }: { tiles: ActionTileProps[] }) {
+/** A responsive row of tiles. Column count follows the item count (3–5). */
+export function ActionGrid({ items }: { items: LinkItem[] }) {
   return (
-    <div className="grid grid-cols-4 gap-2.5">
-      {tiles.map((tile) => (
-        <ActionTile key={tile.label} {...tile} />
+    <div
+      className="grid gap-2.5"
+      style={{ gridTemplateColumns: `repeat(${items.length}, minmax(0, 1fr))` }}
+    >
+      {items.map((item) => (
+        <ActionTile key={item.label} item={item} />
       ))}
     </div>
   );

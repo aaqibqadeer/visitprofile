@@ -29,13 +29,25 @@ npm run build    # production build
 npm run lint     # eslint
 ```
 
+## Routes
+
+The first user is the root (`/`); every profile is also served at its slug:
+`/user1` … `/user8` (statically generated). Add a user in `data/users/`.
+
 ## How it's built
 
-- **Data-driven.** Everything on screen comes from `lib/profile.ts`. Swap that
-  object (or feed it from an API in the same shape) to render anyone.
+- **Data-driven.** Everything on screen comes from a `Profile` in
+  `data/users/*`. Swap/extend it (or feed it from an API in the same shape) to
+  render anyone.
 - **Small, reusable components.** `components/profile/*` are presentational
-  pieces (`ProfileHero`, `BookingCard`, `ActionTile`, `MetaRow`,
+  pieces (`ProfileHero`, `FeaturedCard`, `ActionTile`, `LinkRow`, `MetaRow`,
   `FooterActions`) composed by `ProfileCard`.
+- **Themeable.** Six themes (`paper`, `mono`, `midnight`, `violet`, `sunset`,
+  `forest`) plus shadows live in **one file**, `data/themes.ts`. Each profile
+  picks one via its `theme` field. Add a theme by copying a block.
+- **Readability control.** If a portrait clashes with the hero text, set a
+  profile's `readability` (`none` / `shadow` / `scrim` / `plate`) — also in
+  `data/themes.ts`.
 - **One button, many behaviours.** Every tap uses `<ActionButton action={…}>`.
   An `Action` (`lib/actions.ts`) is interpreted by a single runner that adapts
   to the device:
@@ -58,9 +70,11 @@ future change; keep them aligned for now.
 
 ## Notes
 
-- The portrait in `lib/profile.ts` is a **placeholder** (Unsplash). Replace
-  `photo.src` with the real asset; allowed remote hosts are in `next.config.ts`.
-- All buttons are wired but the destinations are illustrative.
+- Portraits and gallery images are **placeholders** (Unsplash, via
+  `data/users/_assets.ts`). Replace the `src` values with real assets; allowed
+  remote hosts are in `next.config.ts`.
+- All buttons are wired but the destinations are illustrative. Lead-gen forms
+  confirm locally — wire them to an API when ready.
 
 Further reading: [`docs/PROJECT_GUIDE.md`](docs/PROJECT_GUIDE.md) ·
 [`docs/CODING_GUIDELINES.md`](docs/CODING_GUIDELINES.md)

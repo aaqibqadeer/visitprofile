@@ -38,15 +38,11 @@ export function Sheet({ open, onClose, title, description, children }: SheetProp
             role="dialog"
             aria-modal="true"
             aria-label={title}
-            className="relative w-full rounded-t-3xl bg-paper-soft px-6 pb-8 pt-3 shadow-[0_-12px_40px_rgba(0,0,0,0.25)]"
+            className="relative flex max-h-[85%] w-full flex-col rounded-t-3xl bg-paper-soft px-6 pb-8 pt-3 shadow-[0_-12px_40px_rgba(0,0,0,0.25)]"
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
             exit={{ y: "100%" }}
             transition={{ type: "spring", damping: 32, stiffness: 320 }}
-            drag="y"
-            dragConstraints={{ top: 0, bottom: 0 }}
-            dragElastic={{ top: 0, bottom: 0.4 }}
-            onDragEnd={(_, info) => info.offset.y > 120 && onClose()}
           >
             <div className="mx-auto mb-4 h-1.5 w-10 rounded-full bg-paper-line" />
             {title && (
@@ -66,7 +62,9 @@ export function Sheet({ open, onClose, title, description, children }: SheetProp
                 </button>
               </div>
             )}
-            {children}
+            <div className="-mx-1 flex-1 overflow-y-auto px-1 overscroll-contain">
+              {children}
+            </div>
           </motion.div>
         </div>
       )}

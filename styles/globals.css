@@ -72,16 +72,21 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 
-  /* ── Brand / design tokens ───────────────────────────── */
+  /* ── Brand / design tokens ───────────────────────────────
+     Defaults only — the active theme overrides these CSS vars on the card root
+     (see data/themes.ts + themeStyle). Utilities like `bg-paper` read the vars,
+     so re-skinning needs no component changes. */
   --color-paper: #efe9df;
   --color-paper-soft: #f4efe7;
   --color-paper-line: #ddd5c7;
   --color-ink: #211f1b;
   --color-ink-soft: #6f6a60;
   --color-ink-faint: #9a958a;
-  --color-surface-dark: #221f1b;
+  --color-surface: #221f1b;
+  --color-surface-ink: #f4efe7;
+  --color-accent: #5fbf8a;
+  --color-accent-ink: #0d1f15;
   --color-stage: #0c0b0a;
-  --color-online: #5fbf8a;
 
   --font-serif: Georgia, "Times New Roman", Times, serif;
   --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
