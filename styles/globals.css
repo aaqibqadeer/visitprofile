@@ -26,6 +26,11 @@
   --ring: 240 5.9% 10%;
   --radius: 0.5rem;
 
+  /* Fonts — default values; overridden per-theme via inline style on the card root */
+  --font-serif: Georgia, "Times New Roman", Times, serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+
   /* ── Brand / design tokens ──────────────────────────────────────────
      Default "paper" theme. Overridden inline on the card root per profile.  */
   --color-paper: #efe9df;
@@ -46,16 +51,11 @@
    Use @theme inline ONLY for values that should be baked in (radii, fonts).
    Brand colors must stay as var() references so the runtime overrides work.  */
 @theme inline {
-  /* Radii */
+  /* Radii — baked in, never theme-overridden */
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-
-  /* Fonts — baked in, never theme-overridden */
-  --font-serif: Georgia, "Times New Roman", Times, serif;
-  --font-sans:
-    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 /* ── @theme: brand utilities via var() ───────────────────────────────────────
@@ -63,6 +63,7 @@
    Tailwind emit utilities that call var(--color-*) rather than baking in the
    resolved value — so runtime overrides cascade correctly.                   */
 @theme {
+  /* Brand color utilities — var() refs so runtime theme overrides cascade correctly */
   --color-paper: var(--color-paper);
   --color-paper-soft: var(--color-paper-soft);
   --color-paper-line: var(--color-paper-line);
@@ -74,6 +75,10 @@
   --color-accent: var(--color-accent);
   --color-accent-ink: var(--color-accent-ink);
   --color-stage: var(--color-stage);
+
+  /* Font utilities — var() refs so per-theme font stacks override :root defaults */
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
 }
 
 html,

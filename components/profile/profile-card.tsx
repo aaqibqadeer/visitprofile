@@ -7,6 +7,7 @@ import { ActionGrid } from "./action-tile";
 import { LinkRow } from "./link-row";
 // import { MetaRow } from "./meta-row"; // temporarily hidden — re-enable per profile when needed
 import { FooterActions } from "./footer-actions";
+import { AjrakTexture, AjrakBorder, AjrakStar } from "./ajrak";
 
 /**
  * Top-level composition for the profile screen. Lays the pieces out in a single
@@ -20,11 +21,30 @@ export function ProfileCard({ profile }: { profile: Profile }) {
       ? window.location.href
       : `https://visitprofile.app/${profile.slug}`;
 
+  const ajrak = profile.ornament === "ajrak";
+
   return (
-    <div className="flex h-full w-full flex-col overflow-hidden bg-paper">
+    <div className="relative flex h-full w-full flex-col overflow-hidden bg-paper">
+      {/* ── Ajrak ornamentation (Sindhi heritage) ─────────────────────────── */}
+      {ajrak && (
+        <>
+          <AjrakTexture className="pointer-events-none absolute inset-0 z-0 text-accent opacity-[0.08]" />
+          <AjrakBorder side="left" />
+          <AjrakBorder side="right" />
+        </>
+      )}
+
       <ProfileHero profile={profile} />
 
-      <div className="shrink-0 space-y-3 px-5 pt-1 pb-5">
+      <div className="relative z-10 shrink-0 space-y-3 px-5 pt-1 pb-5">
+        {ajrak && (
+          <div className="flex items-center justify-center gap-3 pb-1">
+            <span className="h-px w-12 bg-accent/50" />
+            <AjrakStar className="size-4 text-accent" />
+            <span className="h-px w-12 bg-accent/50" />
+          </div>
+        )}
+
         {profile.featured && <FeaturedCard item={profile.featured} />}
 
         <ActionGrid items={profile.contacts} />
