@@ -67,6 +67,15 @@ export type FormField = {
   required?: boolean;
 };
 
+/** A block inside a Story section — richer than InfoBlock, supports inline images. */
+export type StoryBlock =
+  | { kind: "paragraph"; text: string }
+  | { kind: "heading"; text: string }
+  | { kind: "subheading"; text: string }
+  | { kind: "image"; src: string; alt: string; caption?: string }
+  | { kind: "quote"; text: string; by?: string }
+  | { kind: "divider" };
+
 export type Section =
   | { type: "social"; title: string; description?: string; items: SocialItem[] }
   | { type: "links"; title: string; description?: string; items: LinkItem[] }
@@ -78,6 +87,14 @@ export type Section =
       description?: string;
       fields: FormField[];
       submitLabel?: string;
+    }
+  | {
+      /** Long-form storytelling: hero image → title → rich content blocks. */
+      type: "story";
+      title: string;
+      subtitle?: string;
+      heroImage?: { src: string; alt: string };
+      blocks: StoryBlock[];
     };
 
 /** The full profile. */
@@ -110,6 +127,6 @@ export type Profile = {
   contacts: LinkItem[];
   /** Secondary buttons that open sheets (Social, Links, About, Gallery…). */
   shortcuts: LinkItem[];
-  /** The Now / Reading / Notes strip. */
-  meta: MetaItem[];
+  /** The Now / Reading / Notes strip. Optional — comment out MetaRow to hide. */
+  meta?: MetaItem[];
 };

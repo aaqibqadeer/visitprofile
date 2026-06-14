@@ -4,6 +4,7 @@ import { LinksSection } from "./links-section";
 import { InfoSection } from "./info-section";
 import { GallerySection } from "./gallery-section";
 import { FormSection } from "./form-section";
+import { StorySection } from "./story-section";
 
 /** Renders any structured sheet `Section`. Add a branch to support new types. */
 export function SectionView({ section }: { section: Section }) {
@@ -18,5 +19,7 @@ export function SectionView({ section }: { section: Section }) {
       return <GallerySection section={section} />;
     case "form":
       return <FormSection section={section} />;
+    case "story":
+      return <StorySection section={section} />;
   }
 }

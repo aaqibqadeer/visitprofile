@@ -5,7 +5,7 @@ import { ProfileHero } from "./profile-hero";
 import { FeaturedCard } from "./featured-card";
 import { ActionGrid } from "./action-tile";
 import { LinkRow } from "./link-row";
-import { MetaRow } from "./meta-row";
+// import { MetaRow } from "./meta-row"; // temporarily hidden — re-enable per profile when needed
 import { FooterActions } from "./footer-actions";
 
 /**
@@ -37,7 +37,7 @@ export function ProfileCard({ profile }: { profile: Profile }) {
           </div>
         )}
 
-        <MetaRow items={profile.meta} />
+        {/* <MetaRow items={profile.meta ?? []} /> */}
 
         <FooterActions
           actions={[

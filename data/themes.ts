@@ -135,6 +135,28 @@ export const themes = {
     },
   },
 
+  /**
+   * Ajrak — inspired by the traditional block-printing craft of Sindh.
+   * Deep crimson red, near-black ink, aged ivory paper, and burnished gold accents.
+   */
+  ajrak: {
+    label: "Ajrak",
+    tokens: {
+      paper: "#f5ede3",
+      paperSoft: "#ecddd0",
+      paperLine: "#d6beaa",
+      ink: "#1a0a06",
+      inkSoft: "#5c3020",
+      inkFaint: "#9a6650",
+      surface: "#8b1a1a",
+      surfaceInk: "#fdf3ec",
+      accent: "#c0392b",
+      accentInk: "#ffffff",
+      stage: "#0d0403",
+      shadow: "0 28px 80px -20px rgba(100,10,10,0.65)",
+    },
+  },
+
   /** Deep forest / emerald. */
   forest: {
     label: "Forest",

@@ -76,8 +76,9 @@ export function ActionProvider({
           break;
         case "section":
           openSheet({
-            title: action.section.title,
-            description: action.section.description,
+            // `story` sections have no `description` (they use `subtitle` inside the body)
+            title: action.section.type !== "story" ? action.section.title : undefined,
+            description: action.section.type !== "story" ? action.section.description : undefined,
             body: <SectionView section={action.section} />,
           });
           break;

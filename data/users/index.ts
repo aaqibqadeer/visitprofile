@@ -7,12 +7,13 @@ import { sofia } from "./sofia";
 import { noah } from "./noah";
 import { priya } from "./priya";
 import { kai } from "./kai";
+import { zara } from "./zara";
 
 /**
  * User registry. Each profile is served at `/<slug>` (e.g. `/user1`). The first
  * entry is also the site root (`/`).
  */
-export const users: Profile[] = [maya, devon, aria, leo, sofia, noah, priya, kai];
+export const users: Profile[] = [maya, devon, aria, leo, sofia, noah, priya, kai, zara];
 
 const bySlug = new Map(users.map((u) => [u.slug, u]));
 
