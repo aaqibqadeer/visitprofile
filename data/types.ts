@@ -104,12 +104,8 @@ export type Profile = {
   /** How hero text stays legible over the photo. Tune per profile. */
   readability: ReadabilityMode;
 
-  monogram?: string;
+  monogram: string;
   availability?: string;
-  /** Shown instead of availability when a cultural event badge is needed. */
-  eventBadge?: string;
-  /** Enables heritage ornamentation (Ajrak SVG motifs). */
-  ornament?: "ajrak";
   name: { first: string; last: string };
   role: string;
   company: string;

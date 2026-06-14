@@ -37,11 +37,6 @@ export type ThemeTokens = {
 export type Theme = {
   label: string;
   tokens: ThemeTokens;
-  /** Optional per-theme font-family overrides — emitted as CSS vars on the card root. */
-  fonts?: {
-    serif?: string;
-    sans?: string;
-  };
 };
 
 export const themes = {
@@ -141,30 +136,24 @@ export const themes = {
   },
 
   /**
-   * Ajrak — Sindhi heritage. Deep maroon card ground, crimson tiles, indigo
-   * feature surface, warm-ivory text, antique-gold accents + dividers.
-   *   Maroon  #6B0F0F   Crimson #8B1212   Indigo  #1B233A
-   *   Ivory   #F5EBDD   Gold    #D4B06A
+   * Ajrak — inspired by the traditional block-printing craft of Sindh.
+   * Deep crimson red, near-black ink, aged ivory paper, and burnished gold accents.
    */
   ajrak: {
     label: "Ajrak",
     tokens: {
-      paper: "#6B0F0F", // card ground — deep Ajrak maroon
-      paperSoft: "#8B1212", // tiles / tile buttons — rich crimson
-      paperLine: "#D4B06A", // dividers / borders — antique gold
-      ink: "#F5EBDD", // primary text — warm ivory
-      inkSoft: "#E6D2B5", // secondary text — soft gold-ivory
-      inkFaint: "#C9A064", // muted captions — dim gold
-      surface: "#1B233A", // featured cards / forms — midnight indigo
-      surfaceInk: "#F5EBDD", // text on indigo — ivory
-      accent: "#D4B06A", // accents — antique gold
-      accentInk: "#3A0A0A", // text on gold — dark maroon
-      stage: "#2A0606", // backdrop behind the card
-      shadow: "0 28px 90px -20px rgba(0,0,0,0.85)",
-    },
-    fonts: {
-      serif: '"Playfair Display", "Cormorant Garamond", Georgia, serif',
-      sans: '"Inter", system-ui, -apple-system, "Segoe UI", sans-serif',
+      paper: "#f5ede3",
+      paperSoft: "#ecddd0",
+      paperLine: "#d6beaa",
+      ink: "#1a0a06",
+      inkSoft: "#5c3020",
+      inkFaint: "#9a6650",
+      surface: "#8b1a1a",
+      surfaceInk: "#fdf3ec",
+      accent: "#c0392b",
+      accentInk: "#ffffff",
+      stage: "#0d0403",
+      shadow: "0 28px 80px -20px rgba(100,10,10,0.65)",
     },
   },
 
@@ -192,9 +181,8 @@ export type ThemeName = keyof typeof themes;
 
 /** Turn a theme into the inline CSS-variable style applied to the card root. */
 export function themeStyle(name: ThemeName): React.CSSProperties {
-  const theme = themes[name] as Theme;
-  const t = theme.tokens;
-  const style: Record<string, string> = {
+  const t = themes[name].tokens;
+  return {
     "--color-paper": t.paper,
     "--color-paper-soft": t.paperSoft,
     "--color-paper-line": t.paperLine,
@@ -207,10 +195,7 @@ export function themeStyle(name: ThemeName): React.CSSProperties {
     "--color-accent-ink": t.accentInk,
     "--color-stage": t.stage,
     "--card-shadow": t.shadow,
-  };
-  if (theme.fonts?.serif) style["--font-serif"] = theme.fonts.serif;
-  if (theme.fonts?.sans) style["--font-sans"] = theme.fonts.sans;
-  return style as React.CSSProperties;
+  } as React.CSSProperties;
 }
 
 /* ── Readability ─────────────────────────────────────────────────────────── */

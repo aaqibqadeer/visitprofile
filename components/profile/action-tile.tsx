@@ -8,7 +8,7 @@ export function ActionTile({ item }: { item: LinkItem }) {
     <ActionButton
       action={action}
       aria-label={label}
-      className="flex flex-col items-center gap-2 rounded-2xl bg-paper-soft py-3.5 text-ink hover:brightness-110"
+      className="flex flex-col items-center gap-2 rounded-2xl bg-paper-soft py-3.5 text-ink hover:bg-white"
     >
       <Icon className="size-5" strokeWidth={1.6} />
       <span className="text-xs font-medium">{label}</span>

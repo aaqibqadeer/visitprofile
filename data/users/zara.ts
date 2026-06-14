@@ -12,14 +12,14 @@ import { unsplash, PHOTOS } from "./_assets";
 export const zara: Profile = {
   slug: "user9",
   theme: "ajrak",
-  readability: "shadow",
-  ornament: "ajrak",
+  readability: "plate",
 
-  eventBadge: "Sindh Cultural Day",
+  monogram: "ZM",
+  availability: "Available for commissions",
   name: { first: "Zara", last: "Mirza" },
   role: "Textile Artist & Storyteller",
   company: "Studio Zara",
-  tagline: "ياداشت جا نقش · مٽيءَ جو فن",
+  tagline: "Patterns rooted in memory. Craft woven from land.",
   location: "Karachi · London",
   timezone: "GMT+5 / GMT+1",
   photo: {
