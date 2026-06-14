@@ -106,6 +106,10 @@ export type Profile = {
 
   monogram: string;
   availability?: string;
+  /** Premium cultural event badge (replaces the availability pill when set). */
+  eventBadge?: string;
+  /** Optional decorative ornamentation layered behind the card. */
+  ornament?: "ajrak";
   name: { first: string; last: string };
   role: string;
   company: string;
