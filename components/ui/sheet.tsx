@@ -60,7 +60,9 @@ export function Sheet({ open, onClose, title, description, children }: SheetProp
                 </button>
               </div>
             )}
-            <div className="-mx-1 flex-1 overflow-y-auto overscroll-contain px-1">{children}</div>
+            <div className="-mx-1 flex-1 overflow-x-hidden overflow-y-auto overscroll-contain px-1 [scrollbar-color:rgba(0,0,0,0.2)_transparent] [scrollbar-width:thin] [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-black/20 [&::-webkit-scrollbar-track]:bg-transparent">
+              {children}
+            </div>
           </motion.div>
         </div>
       )}
