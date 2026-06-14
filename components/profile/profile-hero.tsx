@@ -4,7 +4,6 @@ import { readabilityClass } from "@/data/themes";
 import { cn } from "@/lib/utils";
 import { Monogram } from "./monogram";
 import { StatusBadge } from "./status-badge";
-import { EventBadge } from "./event-badge";
 
 /**
  * The portrait that fills the top of the card. It fades into the paper panel at
@@ -29,13 +28,9 @@ export function ProfileHero({ profile }: { profile: Profile }) {
       {/* Fade the portrait into the paper background. */}
       <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-paper via-paper/70 to-transparent" />
 
-      <header className="absolute inset-x-0 top-0 flex items-center justify-between gap-2 px-5 pt-5">
+      <header className="absolute inset-x-0 top-0 flex items-center justify-between px-5 pt-5">
         <Monogram text={profile.monogram} />
-        {profile.eventBadge ? (
-          <EventBadge label={profile.eventBadge} />
-        ) : (
-          profile.availability && <StatusBadge label={profile.availability} />
-        )}
+        {profile.availability && <StatusBadge label={profile.availability} />}
       </header>
 
       <div className="absolute inset-x-0 bottom-0 flex flex-col items-start gap-1 px-6 pb-2">

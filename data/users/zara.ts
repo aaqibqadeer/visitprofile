@@ -1,6 +1,6 @@
 import { Globe, Phone, Mail, Users } from "lucide-react";
 import { A } from "@/lib/actions";
-import { WhatsAppIcon, InstagramIcon } from "@/components/icons";
+import { WhatsAppIcon, InstagramIcon, LinkedInIcon, XIcon } from "@/components/icons";
 import type { Profile } from "@/data/types";
 import { unsplash, PHOTOS } from "./_assets";
 
@@ -12,11 +12,10 @@ import { unsplash, PHOTOS } from "./_assets";
 export const zara: Profile = {
   slug: "user9",
   theme: "ajrak",
-  readability: "shadow",
-  ornament: "ajrak",
+  readability: "plate",
 
   monogram: "ZM",
-  eventBadge: "Sindhi Day • Sana Event",
+  availability: "Available for commissions",
   name: { first: "Zara", last: "Mirza" },
   role: "Textile Artist & Storyteller",
   company: "Studio Zara",

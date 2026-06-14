@@ -16,7 +16,7 @@ export function SocialSection({ section }: { section: SocialSec }) {
             key={item.network}
             action={item.action}
             aria-label={meta.label}
-            className="flex flex-col items-center gap-2 rounded-2xl bg-paper-soft px-2 py-4 text-ink hover:brightness-110"
+            className="flex flex-col items-center gap-2 rounded-2xl bg-paper px-2 py-4 text-ink hover:bg-white"
           >
             <Icon className="size-6" />
             <span className="max-w-full truncate text-xs font-medium">{meta.label}</span>

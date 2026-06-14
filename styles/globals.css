@@ -40,22 +40,22 @@
   --color-accent-ink: #0d1f15;
   --color-stage: #0c0b0a;
   --card-shadow: 0 24px 70px -24px rgba(0, 0, 0, 0.55);
-
-  /* Default font stacks — themes may override these per-card (see themeStyle). */
-  --font-serif: Georgia, "Times New Roman", Times, serif;
-  --font-sans:
-    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 /* ── @theme: Tailwind token registration ─────────────────────────────────────
-   Use @theme inline ONLY for values that should be baked in (radii).
-   Colors and fonts stay as var() references so runtime overrides work.       */
+   Use @theme inline ONLY for values that should be baked in (radii, fonts).
+   Brand colors must stay as var() references so the runtime overrides work.  */
 @theme inline {
   /* Radii */
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  /* Fonts — baked in, never theme-overridden */
+  --font-serif: Georgia, "Times New Roman", Times, serif;
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 /* ── @theme: brand utilities via var() ───────────────────────────────────────
@@ -74,10 +74,6 @@
   --color-accent: var(--color-accent);
   --color-accent-ink: var(--color-accent-ink);
   --color-stage: var(--color-stage);
-
-  /* Fonts via var() so themes can swap them at runtime (font-serif / font-sans). */
-  --font-serif: var(--font-serif);
-  --font-sans: var(--font-sans);
 }
 
 html,
