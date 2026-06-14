@@ -33,7 +33,10 @@ export function InfoSection({ section }: { section: InfoSec }) {
             );
           case "stat":
             return (
-              <div key={i} className="flex items-baseline justify-between border-b border-paper-line pb-2">
+              <div
+                key={i}
+                className="flex items-baseline justify-between border-b border-paper-line pb-2"
+              >
                 <span className="text-sm text-ink-soft">{block.label}</span>
                 <span className="font-serif text-lg text-ink">{block.value}</span>
               </div>
@@ -41,7 +44,7 @@ export function InfoSection({ section }: { section: InfoSec }) {
           case "quote":
             return (
               <blockquote key={i} className="rounded-2xl bg-paper-soft p-4">
-                <p className="font-serif text-base italic text-ink">“{block.text}”</p>
+                <p className="font-serif text-base text-ink italic">“{block.text}”</p>
                 {block.by && <footer className="mt-2 text-xs text-ink-faint">— {block.by}</footer>}
               </blockquote>
             );

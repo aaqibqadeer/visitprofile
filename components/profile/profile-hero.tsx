@@ -34,12 +34,7 @@ export function ProfileHero({ profile }: { profile: Profile }) {
       </header>
 
       <div className="absolute inset-x-0 bottom-0 flex flex-col items-start gap-1 px-6 pb-2">
-        <p
-          className={cn(
-            "text-[11px] font-semibold uppercase tracking-[0.18em] text-ink-soft",
-            r
-          )}
-        >
+        <p className={cn("text-[11px] font-semibold tracking-[0.18em] text-ink-soft uppercase", r)}>
           {profile.role} · {profile.company}
         </p>
         <h1 className={cn("font-serif text-5xl leading-[1.05] text-ink", r)}>

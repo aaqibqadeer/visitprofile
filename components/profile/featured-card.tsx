@@ -15,9 +15,7 @@ export function FeaturedCard({ item }: { item: LinkItem }) {
       </span>
       <span className="min-w-0 flex-1">
         <span className="block text-base font-semibold">{label}</span>
-        {sublabel && (
-          <span className="block truncate text-sm opacity-60">{sublabel}</span>
-        )}
+        {sublabel && <span className="block truncate text-sm opacity-60">{sublabel}</span>}
       </span>
       <ArrowUpRight className="size-5 shrink-0 opacity-70" />
     </ActionButton>

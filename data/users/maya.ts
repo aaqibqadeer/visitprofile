@@ -49,9 +49,17 @@ export const maya: Profile = {
         title: "Social",
         items: [
           { network: "x", handle: "@mayaokafor", action: A.external("https://x.com/mayaokafor") },
-          { network: "linkedin", handle: "in/maya-okafor", action: A.external("https://linkedin.com/in/maya-okafor") },
+          {
+            network: "linkedin",
+            handle: "in/maya-okafor",
+            action: A.external("https://linkedin.com/in/maya-okafor"),
+          },
           { network: "github", handle: "@mayao", action: A.external("https://github.com/mayao") },
-          { network: "instagram", handle: "@maya.builds", action: A.external("https://instagram.com/maya.builds") },
+          {
+            network: "instagram",
+            handle: "@maya.builds",
+            action: A.external("https://instagram.com/maya.builds"),
+          },
         ],
       }),
     },
@@ -63,9 +71,23 @@ export const maya: Profile = {
         type: "links",
         title: "Links",
         items: [
-          { icon: FileText, label: "Resume / CV", sublabel: "PDF · 240 KB", action: A.download("/maya-cv.pdf", "maya-okafor-cv.pdf") },
-          { icon: Globe, label: "Portfolio", sublabel: "lumen.studio", action: A.external("https://lumen.studio") },
-          { icon: LinkedInIcon, label: "LinkedIn profile", action: A.external("https://linkedin.com/in/maya-okafor") },
+          {
+            icon: FileText,
+            label: "Resume / CV",
+            sublabel: "PDF · 240 KB",
+            action: A.download("/maya-cv.pdf", "maya-okafor-cv.pdf"),
+          },
+          {
+            icon: Globe,
+            label: "Portfolio",
+            sublabel: "lumen.studio",
+            action: A.external("https://lumen.studio"),
+          },
+          {
+            icon: LinkedInIcon,
+            label: "LinkedIn profile",
+            action: A.external("https://linkedin.com/in/maya-okafor"),
+          },
           { icon: GitHubIcon, label: "GitHub", action: A.external("https://github.com/mayao") },
           { icon: Video, label: "Zoom room", action: A.external("https://zoom.us/my/mayao") },
         ],
@@ -79,7 +101,10 @@ export const maya: Profile = {
         type: "info",
         title: "About Lumen Studio",
         blocks: [
-          { kind: "paragraph", text: "Lumen builds calm, focused tools for small teams who care about craft." },
+          {
+            kind: "paragraph",
+            text: "Lumen builds calm, focused tools for small teams who care about craft.",
+          },
           { kind: "heading", text: "What we do" },
           { kind: "list", items: ["Product strategy", "Design systems", "Full-stack engineering"] },
           { kind: "stat", label: "Founded", value: "2019" },

@@ -19,7 +19,7 @@ export function ActionButton({ action, className, children, ...props }: ActionBu
       type="button"
       onClick={() => run(action)}
       className={cn(
-        "outline-none transition-[transform,background-color,color] duration-200 focus-visible:ring-2 focus-visible:ring-ink/30 active:scale-[0.97]",
+        "transition-[transform,background-color,color] duration-200 outline-none focus-visible:ring-2 focus-visible:ring-ink/30 active:scale-[0.97]",
         className
       )}
       {...props}

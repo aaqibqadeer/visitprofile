@@ -24,7 +24,7 @@ export function ProfileCard({ profile }: { profile: Profile }) {
     <div className="flex h-full w-full flex-col overflow-hidden bg-paper">
       <ProfileHero profile={profile} />
 
-      <div className="shrink-0 space-y-3 px-5 pb-5 pt-1">
+      <div className="shrink-0 space-y-3 px-5 pt-1 pb-5">
         {profile.featured && <FeaturedCard item={profile.featured} />}
 
         <ActionGrid items={profile.contacts} />

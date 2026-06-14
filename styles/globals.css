@@ -54,8 +54,8 @@
 
   /* Fonts — baked in, never theme-overridden */
   --font-serif: Georgia, "Times New Roman", Times, serif;
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif;
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 /* ── @theme: brand utilities via var() ───────────────────────────────────────

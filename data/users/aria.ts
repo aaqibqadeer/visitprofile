@@ -42,10 +42,24 @@ export const aria: Profile = {
         type: "links",
         title: "Work",
         items: [
-          { icon: DribbbleIcon, label: "Dribbble", sublabel: "Shots & explorations", action: A.external("https://dribbble.com/arian") },
-          { icon: BehanceIcon, label: "Behance", sublabel: "Case studies", action: A.external("https://behance.net/arian") },
+          {
+            icon: DribbbleIcon,
+            label: "Dribbble",
+            sublabel: "Shots & explorations",
+            action: A.external("https://dribbble.com/arian"),
+          },
+          {
+            icon: BehanceIcon,
+            label: "Behance",
+            sublabel: "Case studies",
+            action: A.external("https://behance.net/arian"),
+          },
           { icon: Globe, label: "Portfolio", action: A.external("https://arian.design") },
-          { icon: LinkedInIcon, label: "LinkedIn", action: A.external("https://linkedin.com/in/arian") },
+          {
+            icon: LinkedInIcon,
+            label: "LinkedIn",
+            action: A.external("https://linkedin.com/in/arian"),
+          },
         ],
       }),
     },
@@ -56,8 +70,16 @@ export const aria: Profile = {
         type: "info",
         title: "Testimonials",
         blocks: [
-          { kind: "quote", text: "Aria shipped our redesign in six weeks. Conversions are up 30%.", by: "PM, Fintech startup" },
-          { kind: "quote", text: "The most thoughtful designer I've worked with.", by: "Engineering lead" },
+          {
+            kind: "quote",
+            text: "Aria shipped our redesign in six weeks. Conversions are up 30%.",
+            by: "PM, Fintech startup",
+          },
+          {
+            kind: "quote",
+            text: "The most thoughtful designer I've worked with.",
+            by: "Engineering lead",
+          },
           { kind: "quote", text: "Clear, fast, and a joy to collaborate with.", by: "Founder" },
         ],
       }),
@@ -69,9 +91,17 @@ export const aria: Profile = {
         type: "social",
         title: "Social",
         items: [
-          { network: "dribbble", handle: "@arian", action: A.external("https://dribbble.com/arian") },
+          {
+            network: "dribbble",
+            handle: "@arian",
+            action: A.external("https://dribbble.com/arian"),
+          },
           { network: "behance", handle: "arian", action: A.external("https://behance.net/arian") },
-          { network: "x", handle: "@arian_design", action: A.external("https://x.com/arian_design") },
+          {
+            network: "x",
+            handle: "@arian_design",
+            action: A.external("https://x.com/arian_design"),
+          },
         ],
       }),
     },
@@ -80,6 +110,11 @@ export const aria: Profile = {
   meta: [
     { label: "Now", value: "Design systems", dot: true },
     { label: "Tool", value: "Figma", serif: true },
-    { label: "Dribbble", value: "View", external: true, action: A.external("https://dribbble.com/arian") },
+    {
+      label: "Dribbble",
+      value: "View",
+      external: true,
+      action: A.external("https://dribbble.com/arian"),
+    },
   ],
 };

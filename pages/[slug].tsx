@@ -10,9 +10,7 @@ import { ProfileScreen } from "@/components/profile/profile-screen";
  * resolved from the bundled registry at render time — works at build and on the
  * client alike.
  */
-export default function UserPage({
-  slug,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function UserPage({ slug }: InferGetStaticPropsType<typeof getStaticProps>) {
   const profile = getUser(slug);
   if (!profile) return null;
   return <ProfileScreen profile={profile} />;

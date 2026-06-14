@@ -30,7 +30,7 @@ function MetaCell({ item }: { item: MetaItem }) {
 
   return (
     <div className="min-w-0">
-      <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-ink-faint">
+      <p className="text-[10px] font-semibold tracking-[0.14em] text-ink-faint uppercase">
         {item.label}
       </p>
       {item.action ? (

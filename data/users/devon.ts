@@ -50,9 +50,21 @@ export const devon: Profile = {
         type: "social",
         title: "Social",
         items: [
-          { network: "instagram", handle: "@carter.visuals", action: A.external("https://instagram.com/carter.visuals") },
-          { network: "behance", handle: "carter", action: A.external("https://behance.net/carter") },
-          { network: "youtube", handle: "@cartervisuals", action: A.external("https://youtube.com/@cartervisuals") },
+          {
+            network: "instagram",
+            handle: "@carter.visuals",
+            action: A.external("https://instagram.com/carter.visuals"),
+          },
+          {
+            network: "behance",
+            handle: "carter",
+            action: A.external("https://behance.net/carter"),
+          },
+          {
+            network: "youtube",
+            handle: "@cartervisuals",
+            action: A.external("https://youtube.com/@cartervisuals"),
+          },
         ],
       }),
     },
@@ -70,9 +82,21 @@ export const devon: Profile = {
         type: "links",
         title: "Pay me",
         items: [
-          { icon: CreditCard, label: "PayPal", action: A.external("https://paypal.me/cartervisuals") },
-          { icon: CreditCard, label: "Venmo", action: A.external("https://venmo.com/cartervisuals") },
-          { icon: CreditCard, label: "Stripe invoice", action: A.external("https://buy.stripe.com/test_devon") },
+          {
+            icon: CreditCard,
+            label: "PayPal",
+            action: A.external("https://paypal.me/cartervisuals"),
+          },
+          {
+            icon: CreditCard,
+            label: "Venmo",
+            action: A.external("https://venmo.com/cartervisuals"),
+          },
+          {
+            icon: CreditCard,
+            label: "Stripe invoice",
+            action: A.external("https://buy.stripe.com/test_devon"),
+          },
         ],
       }),
     },
@@ -81,6 +105,11 @@ export const devon: Profile = {
   meta: [
     { label: "Now", value: "On assignment", dot: true },
     { label: "Gear", value: "Leica Q3", serif: true },
-    { label: "Prints", value: "Shop", external: true, action: A.external("https://cartervisuals.com/shop") },
+    {
+      label: "Prints",
+      value: "Shop",
+      external: true,
+      action: A.external("https://cartervisuals.com/shop"),
+    },
   ],
 };

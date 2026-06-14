@@ -15,9 +15,7 @@ export function LinkRow({ item }: { item: LinkItem }) {
       </span>
       <span className="min-w-0 flex-1">
         <span className="block truncate text-sm font-medium">{label}</span>
-        {sublabel && (
-          <span className="block truncate text-xs text-ink-soft">{sublabel}</span>
-        )}
+        {sublabel && <span className="block truncate text-xs text-ink-soft">{sublabel}</span>}
       </span>
       <ChevronRight className="size-4 shrink-0 text-ink-faint" />
     </ActionButton>

@@ -90,6 +90,11 @@ export const priya: Profile = {
   meta: [
     { label: "Now", value: "Booking next week", dot: true },
     { label: "Rated", value: "4.9 ★", serif: true },
-    { label: "Reviews", value: "Read", external: true, action: A.external("https://g.page/shah-home") },
+    {
+      label: "Reviews",
+      value: "Read",
+      external: true,
+      action: A.external("https://g.page/shah-home"),
+    },
   ],
 };

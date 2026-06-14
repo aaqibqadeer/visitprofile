@@ -49,7 +49,10 @@ export const sofia: Profile = {
           { kind: "heading", text: "1:1 Coaching" },
           { kind: "paragraph", text: "Biweekly sessions over 3–6 months." },
           { kind: "heading", text: "Team workshops" },
-          { kind: "list", items: ["Leadership offsites", "Feedback culture", "Founder–team alignment"] },
+          {
+            kind: "list",
+            items: ["Leadership offsites", "Feedback culture", "Founder–team alignment"],
+          },
         ],
       }),
     },
@@ -60,8 +63,16 @@ export const sofia: Profile = {
         type: "info",
         title: "What clients say",
         blocks: [
-          { kind: "quote", text: "Sofia helped me delegate for the first time in years.", by: "Seed-stage founder" },
-          { kind: "quote", text: "Our leadership team finally talks straight.", by: "Series A CEO" },
+          {
+            kind: "quote",
+            text: "Sofia helped me delegate for the first time in years.",
+            by: "Seed-stage founder",
+          },
+          {
+            kind: "quote",
+            text: "Our leadership team finally talks straight.",
+            by: "Series A CEO",
+          },
         ],
       }),
     },
@@ -84,6 +95,16 @@ export const sofia: Profile = {
   meta: [
     { label: "Now", value: "2 spots open", dot: true },
     { label: "Reading", value: "The Mountain Is You", serif: true },
-    { label: "Waitlist", value: "Join", external: true, action: A.section({ type: "form", title: "Join the waitlist", submitLabel: "Join waitlist", fields: [{ name: "email", label: "Email", type: "email", required: true }] }) },
+    {
+      label: "Waitlist",
+      value: "Join",
+      external: true,
+      action: A.section({
+        type: "form",
+        title: "Join the waitlist",
+        submitLabel: "Join waitlist",
+        fields: [{ name: "email", label: "Email", type: "email", required: true }],
+      }),
+    },
   ],
 };

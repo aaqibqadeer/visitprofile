@@ -43,8 +43,16 @@ export const kai: Profile = {
         type: "social",
         title: "Follow Kai",
         items: [
-          { network: "youtube", handle: "@kaimusic", action: A.external("https://youtube.com/@kaimusic") },
-          { network: "tiktok", handle: "@kaimusic", action: A.external("https://tiktok.com/@kaimusic") },
+          {
+            network: "youtube",
+            handle: "@kaimusic",
+            action: A.external("https://youtube.com/@kaimusic"),
+          },
+          {
+            network: "tiktok",
+            handle: "@kaimusic",
+            action: A.external("https://tiktok.com/@kaimusic"),
+          },
           { network: "instagram", handle: "@kai", action: A.external("https://instagram.com/kai") },
           { network: "x", handle: "@kaimusic", action: A.external("https://x.com/kaimusic") },
         ],
@@ -80,6 +88,11 @@ export const kai: Profile = {
   meta: [
     { label: "Now", value: "New EP: Halo", dot: true },
     { label: "Mood", value: "Nocturne", serif: true },
-    { label: "Merch", value: "Shop", external: true, action: A.external("https://shop.kaimusic.com") },
+    {
+      label: "Merch",
+      value: "Shop",
+      external: true,
+      action: A.external("https://shop.kaimusic.com"),
+    },
   ],
 };

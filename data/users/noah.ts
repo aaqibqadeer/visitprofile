@@ -44,9 +44,24 @@ export const noah: Profile = {
         title: "Blog",
         description: "Recent posts",
         items: [
-          { icon: BookOpen, label: "Idempotency keys done right", sublabel: "8 min read", action: A.external("https://bennett.dev/idempotency") },
-          { icon: BookOpen, label: "Queues over cron", sublabel: "6 min read", action: A.external("https://bennett.dev/queues") },
-          { icon: BookOpen, label: "A case for boring tech", sublabel: "5 min read", action: A.external("https://bennett.dev/boring") },
+          {
+            icon: BookOpen,
+            label: "Idempotency keys done right",
+            sublabel: "8 min read",
+            action: A.external("https://bennett.dev/idempotency"),
+          },
+          {
+            icon: BookOpen,
+            label: "Queues over cron",
+            sublabel: "6 min read",
+            action: A.external("https://bennett.dev/queues"),
+          },
+          {
+            icon: BookOpen,
+            label: "A case for boring tech",
+            sublabel: "5 min read",
+            action: A.external("https://bennett.dev/boring"),
+          },
         ],
       }),
     },
@@ -63,7 +78,10 @@ export const noah: Profile = {
         type: "info",
         title: "How I help",
         blocks: [
-          { kind: "list", items: ["Architecture reviews", "Backend & infra builds", "Team mentoring"] },
+          {
+            kind: "list",
+            items: ["Architecture reviews", "Backend & infra builds", "Team mentoring"],
+          },
           { kind: "stat", label: "Rate", value: "€1,200 / day" },
         ],
       }),
@@ -77,7 +95,11 @@ export const noah: Profile = {
         items: [
           { network: "github", handle: "@noahb", action: A.external("https://github.com/noahb") },
           { network: "x", handle: "@noah_codes", action: A.external("https://x.com/noah_codes") },
-          { network: "linkedin", handle: "in/noahbennett", action: A.external("https://linkedin.com/in/noahbennett") },
+          {
+            network: "linkedin",
+            handle: "in/noahbennett",
+            action: A.external("https://linkedin.com/in/noahbennett"),
+          },
         ],
       }),
     },
@@ -86,6 +108,11 @@ export const noah: Profile = {
   meta: [
     { label: "Now", value: "Open source", dot: true },
     { label: "Stack", value: "Rust · Go", serif: true },
-    { label: "GitHub", value: "@noahb", external: true, action: A.external("https://github.com/noahb") },
+    {
+      label: "GitHub",
+      value: "@noahb",
+      external: true,
+      action: A.external("https://github.com/noahb"),
+    },
   ],
 };

@@ -30,7 +30,11 @@ export const leo: Profile = {
 
   contacts: [
     { icon: Phone, label: "Call", action: A.tel("+351 21 555 0190") },
-    { icon: WhatsAppIcon, label: "WhatsApp", action: A.whatsapp("+351215550190", "Hi! I'd like to book a table.") },
+    {
+      icon: WhatsAppIcon,
+      label: "WhatsApp",
+      action: A.whatsapp("+351215550190", "Hi! I'd like to book a table."),
+    },
     { icon: MapPin, label: "Directions", action: A.maps("Casa Martins, Lisbon") },
   ],
 
@@ -76,9 +80,21 @@ export const leo: Profile = {
         type: "social",
         title: "Social",
         items: [
-          { network: "instagram", handle: "@casamartins", action: A.external("https://instagram.com/casamartins") },
-          { network: "facebook", handle: "Casa Martins", action: A.external("https://facebook.com/casamartins") },
-          { network: "tiktok", handle: "@casamartins", action: A.external("https://tiktok.com/@casamartins") },
+          {
+            network: "instagram",
+            handle: "@casamartins",
+            action: A.external("https://instagram.com/casamartins"),
+          },
+          {
+            network: "facebook",
+            handle: "Casa Martins",
+            action: A.external("https://facebook.com/casamartins"),
+          },
+          {
+            network: "tiktok",
+            handle: "@casamartins",
+            action: A.external("https://tiktok.com/@casamartins"),
+          },
         ],
       }),
     },
@@ -87,6 +103,11 @@ export const leo: Profile = {
   meta: [
     { label: "Tonight", value: "Few tables left", dot: true },
     { label: "Special", value: "Octopus", serif: true },
-    { label: "Reserve", value: "Book", external: true, action: A.external("https://book.casamartins.pt") },
+    {
+      label: "Reserve",
+      value: "Book",
+      external: true,
+      action: A.external("https://book.casamartins.pt"),
+    },
   ],
 };
