@@ -96,6 +96,12 @@ export default function AdminPage() {
               >
                 Signup requests
               </Link>
+              <Link
+                href="/admin/analytics"
+                className="text-sm text-zinc-400 hover:text-white"
+              >
+                Analytics
+              </Link>
             </div>
             <div className="flex items-center gap-3">
               <button

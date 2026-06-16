@@ -195,9 +195,14 @@ export default function RequestsPage({ user: _user }: Props) {
               <Link href="/admin" className="text-sm text-zinc-400 hover:text-white">← Profiles</Link>
               <h1 className="text-lg font-bold text-white">Signup requests</h1>
             </div>
-            <span className="rounded-full bg-amber-500 px-2.5 py-0.5 text-xs font-bold text-white">
-              {pending.length} pending
-            </span>
+            <div className="flex items-center gap-4">
+              <Link href="/admin/analytics" className="text-sm text-zinc-400 hover:text-white">
+                Analytics
+              </Link>
+              <span className="rounded-full bg-amber-500 px-2.5 py-0.5 text-xs font-bold text-white">
+                {pending.length} pending
+              </span>
+            </div>
           </div>
         </div>
 

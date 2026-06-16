@@ -2,13 +2,14 @@ import { createContext, useCallback, useContext, useMemo, useState } from "react
 import type { Action, SheetContent } from "@/lib/actions";
 import { digits } from "@/lib/actions";
 import type { Profile } from "@/data/types";
+import { trackClick } from "@/lib/analytics";
 import { downloadUrl, downloadVCard } from "@/lib/vcard";
 import { useIsTouch } from "@/lib/use-is-touch";
 import { Sheet } from "@/components/ui/sheet";
 import { SectionView } from "@/components/sections/section-view";
 
 type ActionContextValue = {
-  run: (action: Action) => void;
+  run: (action: Action, label?: string) => void;
 };
 
 const ActionContext = createContext<ActionContextValue | null>(null);
@@ -32,7 +33,10 @@ export function ActionProvider({
   const closeSheet = useCallback(() => setSheet(null), []);
 
   const run = useCallback(
-    (action: Action) => {
+    (action: Action, label?: string) => {
+      if (action.kind !== "none" && label) {
+        trackClick(profile.slug, label, action.kind);
+      }
       switch (action.kind) {
         case "tel":
           go(isTouch, `tel:${action.value}`, () =>

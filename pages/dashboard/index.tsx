@@ -55,6 +55,18 @@ export default function DashboardPage({ user, profile }: Props) {
           <p className="text-sm font-semibold text-white">My Profile</p>
           <div className="flex items-center gap-3">
             <a
+              href="/dashboard/analytics"
+              className="flex items-center gap-1.5 text-xs text-zinc-400 hover:text-white"
+            >
+              Analytics
+            </a>
+            <a
+              href="/dashboard/billing"
+              className="flex items-center gap-1.5 text-xs text-zinc-400 hover:text-white"
+            >
+              Billing
+            </a>
+            <a
               href="/dashboard/change-password"
               className="flex items-center gap-1.5 text-xs text-zinc-400 hover:text-white"
             >

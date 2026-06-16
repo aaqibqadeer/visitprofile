@@ -1,8 +1,10 @@
 import Head from "next/head";
+import { useEffect } from "react";
 import type { Profile } from "@/data/types";
 import { themeStyle } from "@/data/themes";
 import { ActionProvider } from "@/components/action/action-provider";
 import { ProfileCard } from "./profile-card";
+import { trackView } from "@/lib/analytics";
 
 /**
  * Full-screen frame for a profile. Mobile: the card fills the viewport. Wider
@@ -12,6 +14,10 @@ import { ProfileCard } from "./profile-card";
  */
 export function ProfileScreen({ profile, preview }: { profile: Profile; preview?: boolean }) {
   const fullName = `${profile.name.first} ${profile.name.last}`;
+
+  useEffect(() => {
+    if (!preview) trackView(profile.slug);
+  }, [profile.slug, preview]);
 
   return (
     <>
