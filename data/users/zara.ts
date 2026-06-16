@@ -14,8 +14,8 @@ export const zara: Profile = {
   theme: "ajrak",
   readability: "plate",
 
-  monogram: "ZM",
-  availability: "Available for commissions",
+  monogram: { content: { type: 'text', value: '' }, size: 'm' },
+  availability: { content: { type: 'text', value: '' }, size: 'm' },
   name: { first: "Zara", last: "Mirza" },
   role: "Textile Artist & Storyteller",
   company: "Studio Zara",

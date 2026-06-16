@@ -9,8 +9,8 @@ export const leo: Profile = {
   theme: "sunset",
   readability: "plate",
 
-  monogram: "LM",
-  availability: "Open today",
+  monogram: { content: { type: 'text', value: '' }, size: 'm' },
+  availability: { content: { type: 'text', value: '' }, size: 'm' },
   name: { first: "Leo", last: "Martins" },
   role: "Chef & Owner",
   company: "Casa Martins",

@@ -9,8 +9,8 @@ export const noah: Profile = {
   theme: "midnight",
   readability: "shadow",
 
-  monogram: "NB",
-  availability: "Available · contract",
+  monogram: { content: { type: 'text', value: '' }, size: 'm' },
+  availability: { content: { type: 'text', value: '' }, size: 'm' },
   name: { first: "Noah", last: "Bennett" },
   role: "Staff Engineer",
   company: "Freelance",

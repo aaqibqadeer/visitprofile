@@ -29,8 +29,8 @@ export function ProfileHero({ profile }: { profile: Profile }) {
       <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-paper via-paper/70 to-transparent" />
 
       <header className="absolute inset-x-0 top-0 flex items-center justify-between px-5 pt-5">
-        <Monogram text={profile.monogram} />
-        {profile.availability && <StatusBadge label={profile.availability} />}
+        {profile.monogram && <Monogram badge={profile.monogram} />}
+        {profile.availability && <StatusBadge badge={profile.availability} />}
       </header>
 
       <div className="absolute inset-x-0 bottom-0 flex flex-col items-start gap-1 px-6 pb-2">

@@ -8,8 +8,8 @@ export const sofia: Profile = {
   theme: "forest",
   readability: "none",
 
-  monogram: "SR",
-  availability: "Taking clients",
+  monogram: { content: { type: 'text', value: '' }, size: 'm' },
+  availability: { content: { type: 'text', value: '' }, size: 'm' },
   name: { first: "Sofia", last: "Reyes" },
   role: "Leadership Coach",
   company: "Reyes Coaching",

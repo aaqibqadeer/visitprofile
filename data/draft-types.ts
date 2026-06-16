@@ -19,7 +19,11 @@ import type {
   GalleryImage,
   FormField,
   StoryBlock,
+  Badge,
 } from "@/data/types";
+
+// Re-export so consumers only need to import from draft-types
+export type { Badge, BadgeContent, BadgeSize } from "@/data/types";
 
 /* ── Icon keys ────────────────────────────────────────────────────────────── */
 
@@ -117,10 +121,8 @@ export type ProfileDraft = {
   slug: string;
   theme: ThemeName;
   readability: ReadabilityMode;
-  monogram?: string;
-  availability?: string;
-  eventBadge?: string;
-  ornament?: "ajrak";
+  monogram?: Badge;
+  availability?: Badge;
   name: { first: string; last: string };
   role: string;
   company: string;
@@ -145,7 +147,6 @@ export const BLANK_PROFILE: ProfileDraft = {
   slug: "",
   theme: "paper",
   readability: "none",
-  monogram: "",
   name: { first: "", last: "" },
   role: "",
   company: "",

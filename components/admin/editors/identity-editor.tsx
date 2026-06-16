@@ -1,6 +1,7 @@
 "use client";
 import type { ProfileDraft } from "@/data/draft-types";
 import { Field, inputCls } from "@/components/admin/ui/field";
+import { BadgeEditor } from "./badge-editor";
 
 interface Props { value: ProfileDraft; onChange: (p: ProfileDraft) => void; }
 
@@ -44,16 +45,16 @@ export function IdentityEditor({ value, onChange }: Props) {
             onChange={e => set({ timezone: e.target.value })} />
         </Field>
       </div>
-      <div className="grid grid-cols-2 gap-3">
-        <Field label="Monogram">
-          <input className={inputCls} value={value.monogram ?? ""} placeholder="JS" maxLength={3}
-            onChange={e => set({ monogram: e.target.value })} />
-        </Field>
-        <Field label="Availability badge">
-          <input className={inputCls} value={value.availability ?? ""} placeholder="Open to work"
-            onChange={e => set({ availability: e.target.value || undefined })} />
-        </Field>
-      </div>
+      <BadgeEditor
+        label="Monogram (top-left mark)"
+        value={value.monogram}
+        onChange={monogram => set({ monogram })}
+      />
+      <BadgeEditor
+        label="Status badge (top-right)"
+        value={value.availability}
+        onChange={availability => set({ availability })}
+      />
     </div>
   );
 }

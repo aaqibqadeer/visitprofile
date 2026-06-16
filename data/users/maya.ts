@@ -9,8 +9,8 @@ export const maya: Profile = {
   theme: "paper",
   readability: "scrim",
 
-  monogram: "M·O",
-  availability: "Available · Q3",
+  monogram: { content: { type: 'text', value: '' }, size: 'm' },
+  availability: { content: { type: 'text', value: '' }, size: 'm' },
   name: { first: "Maya", last: "Okafor" },
   role: "Founder & CEO",
   company: "Lumen Studio",

@@ -9,8 +9,8 @@ export const kai: Profile = {
   theme: "mono",
   readability: "shadow",
 
-  monogram: "KA",
-  availability: "New EP out now",
+  monogram: { content: { type: 'text', value: '' }, size: 'm' },
+  availability: { content: { type: 'text', value: '' }, size: 'm' },
   name: { first: "Kai", last: "Anderson" },
   role: "Musician",
   company: "Independent",

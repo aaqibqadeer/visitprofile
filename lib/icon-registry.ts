@@ -113,7 +113,7 @@ export function resolveProfile(draft: ProfileDraft): Profile {
     slug: draft.slug,
     theme: draft.theme,
     readability: draft.readability,
-    monogram: draft.monogram ?? "",
+    monogram: draft.monogram,
     availability: draft.availability,
     name: draft.name,
     role: draft.role,

@@ -30,7 +30,9 @@ export function ProfileCardThumb({ profile, onEdit, onDelete }: Props) {
             className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-sm font-bold text-white"
             style={{ background: t.accent }}
           >
-            {profile.monogram || profile.name.first[0] || "?"}
+            {profile.monogram?.content.type === "text"
+              ? profile.monogram.content.value.slice(0, 2)
+              : profile.name.first[0] || "?"}
           </div>
         </div>
         <div className="flex flex-wrap items-center gap-1.5">

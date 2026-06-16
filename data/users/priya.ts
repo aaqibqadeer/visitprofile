@@ -16,8 +16,8 @@ export const priya: Profile = {
   theme: "paper",
   readability: "plate",
 
-  monogram: "PS",
-  availability: "Free estimates",
+  monogram: { content: { type: 'text', value: '' }, size: 'm' },
+  availability: { content: { type: 'text', value: '' }, size: 'm' },
   name: { first: "Priya", last: "Shah" },
   role: "Handywoman",
   company: "Shah Home Services",

@@ -9,6 +9,17 @@ import type { ReadabilityMode } from "./themes";
  * copy or behaviour of their own.
  */
 
+/* ── Flexible badge (monogram / availability) ────────────────────────────── */
+
+export type BadgeSize = "xs" | "sm" | "m" | "large" | "xlarge";
+
+export type BadgeContent =
+  | { type: "text"; value: string }
+  | { type: "image"; src: string; alt?: string };
+
+/** A badge that can be text or a small image, with an optional size. */
+export type Badge = { content: BadgeContent; size?: BadgeSize };
+
 /** A tappable item: icon + label (+ optional sublabel) bound to an Action. */
 export type LinkItem = {
   icon: IconType;
@@ -104,8 +115,8 @@ export type Profile = {
   /** How hero text stays legible over the photo. Tune per profile. */
   readability: ReadabilityMode;
 
-  monogram: string;
-  availability?: string;
+  monogram?: Badge;
+  availability?: Badge;
   name: { first: string; last: string };
   role: string;
   company: string;

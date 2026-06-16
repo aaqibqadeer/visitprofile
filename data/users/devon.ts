@@ -17,8 +17,8 @@ export const devon: Profile = {
   theme: "mono",
   readability: "plate",
 
-  monogram: "DC",
-  availability: "Booking 2026",
+  monogram: { content: { type: 'text', value: '' }, size: 'm' },
+  availability: { content: { type: 'text', value: '' }, size: 'm' },
   name: { first: "Devon", last: "Carter" },
   role: "Photographer",
   company: "Carter Visuals",

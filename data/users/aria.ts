@@ -9,8 +9,8 @@ export const aria: Profile = {
   theme: "violet",
   readability: "shadow",
 
-  monogram: "AN",
-  availability: "Open to freelance",
+  monogram: { content: { type: 'text', value: '' }, size: 'm' },
+  availability: { content: { type: 'text', value: '' }, size: 'm' },
   name: { first: "Aria", last: "Nakamura" },
   role: "Product Designer",
   company: "Independent",
