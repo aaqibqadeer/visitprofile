@@ -10,16 +10,18 @@ import { ProfileCard } from "./profile-card";
  * edges are flush, just like the mobile screen). The active theme's CSS vars
  * are applied here so both the card and its sheets inherit them.
  */
-export function ProfileScreen({ profile }: { profile: Profile }) {
+export function ProfileScreen({ profile, preview }: { profile: Profile; preview?: boolean }) {
   const fullName = `${profile.name.first} ${profile.name.last}`;
 
   return (
     <>
-      <Head>
-        <title>{`${fullName} · ${profile.company}`}</title>
-        <meta name="description" content={profile.tagline} />
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-      </Head>
+      {!preview && (
+        <Head>
+          <title>{`${fullName} · ${profile.company}`}</title>
+          <meta name="description" content={profile.tagline} />
+          <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        </Head>
+      )}
 
       <main
         className="grid h-[100svh] w-full place-items-center bg-stage"

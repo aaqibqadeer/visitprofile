@@ -1,0 +1,826 @@
+[
+  {
+    "slug": "user1",
+    "theme": "paper",
+    "readability": "scrim",
+    "monogram": "M·O",
+    "availability": "Available · Q3",
+    "name": { "first": "Maya", "last": "Okafor" },
+    "role": "Founder & CEO",
+    "company": "Lumen Studio",
+    "tagline": "Building quiet software for thoughtful teams.",
+    "location": "Brooklyn, NY",
+    "timezone": "GMT−5",
+    "photo": {
+      "src": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Maya Okafor"
+    },
+    "contact": { "phone": "+1 (347) 555-0142", "email": "maya@lumen.studio" },
+    "featured": {
+      "iconKey": "Calendar",
+      "label": "Book a meeting",
+      "sublabel": "30 min · next opening Thu 2:00pm",
+      "action": { "kind": "external", "href": "https://cal.com/maya-okafor/30min" }
+    },
+    "contacts": [
+      { "iconKey": "Phone", "label": "Call", "action": { "kind": "tel", "value": "+1 (347) 555-0142" } },
+      { "iconKey": "Mail", "label": "Email", "action": { "kind": "mailto", "value": "maya@lumen.studio" } },
+      { "iconKey": "Video", "label": "FaceTime", "action": { "kind": "facetime", "value": "maya@lumen.studio" } },
+      { "iconKey": "MessageSquare", "label": "Message", "action": { "kind": "sms", "value": "+1 (347) 555-0142" } }
+    ],
+    "shortcuts": [
+      {
+        "iconKey": "Globe",
+        "label": "Social",
+        "sublabel": "Find me everywhere",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "social",
+            "title": "Social",
+            "items": [
+              { "network": "x", "handle": "@mayaokafor", "action": { "kind": "external", "href": "https://x.com/mayaokafor" } },
+              { "network": "linkedin", "handle": "in/maya-okafor", "action": { "kind": "external", "href": "https://linkedin.com/in/maya-okafor" } },
+              { "network": "github", "handle": "@mayao", "action": { "kind": "external", "href": "https://github.com/mayao" } },
+              { "network": "instagram", "handle": "@maya.builds", "action": { "kind": "external", "href": "https://instagram.com/maya.builds" } }
+            ]
+          }
+        }
+      },
+      {
+        "iconKey": "FileText",
+        "label": "Links",
+        "sublabel": "Resume, portfolio & more",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "links",
+            "title": "Links",
+            "items": [
+              { "iconKey": "FileText", "label": "Resume / CV", "sublabel": "PDF · 240 KB", "action": { "kind": "download", "href": "/maya-cv.pdf", "filename": "maya-okafor-cv.pdf" } },
+              { "iconKey": "Globe", "label": "Portfolio", "sublabel": "lumen.studio", "action": { "kind": "external", "href": "https://lumen.studio" } },
+              { "iconKey": "LinkedInIcon", "label": "LinkedIn profile", "action": { "kind": "external", "href": "https://linkedin.com/in/maya-okafor" } },
+              { "iconKey": "GitHubIcon", "label": "GitHub", "action": { "kind": "external", "href": "https://github.com/mayao" } },
+              { "iconKey": "Video", "label": "Zoom room", "action": { "kind": "external", "href": "https://zoom.us/my/mayao" } }
+            ]
+          }
+        }
+      },
+      {
+        "iconKey": "Users",
+        "label": "About",
+        "sublabel": "Story, team & FAQ",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "info",
+            "title": "About Lumen Studio",
+            "blocks": [
+              { "kind": "paragraph", "text": "Lumen builds calm, focused tools for small teams who care about craft." },
+              { "kind": "heading", "text": "What we do" },
+              { "kind": "list", "items": ["Product strategy", "Design systems", "Full-stack engineering"] },
+              { "kind": "stat", "label": "Founded", "value": "2019" },
+              { "kind": "stat", "label": "Team", "value": "11" },
+              { "kind": "quote", "text": "Working with Maya changed how we ship.", "by": "A happy client" }
+            ]
+          }
+        }
+      },
+      {
+        "iconKey": "HelpCircle",
+        "label": "Inquire",
+        "sublabel": "Start a project",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "form",
+            "title": "Start a project",
+            "description": "Tell me a little about what you're building.",
+            "submitLabel": "Send inquiry",
+            "fields": [
+              { "name": "name", "label": "Your name", "type": "text", "required": true },
+              { "name": "email", "label": "Email", "type": "email", "required": true },
+              { "name": "message", "label": "What do you need?", "type": "textarea", "required": true }
+            ]
+          }
+        }
+      }
+    ],
+    "meta": [
+      { "label": "Now", "value": "Shipping v3.2", "dot": true },
+      { "label": "Reading", "value": "A Pattern Language", "serif": true },
+      { "label": "Notes", "value": "Latest", "external": true, "action": { "kind": "external", "href": "https://lumen.studio/notes" } }
+    ]
+  },
+  {
+    "slug": "user2",
+    "theme": "mono",
+    "readability": "plate",
+    "monogram": "DC",
+    "availability": "Booking 2026",
+    "name": { "first": "Devon", "last": "Carter" },
+    "role": "Photographer",
+    "company": "Carter Visuals",
+    "tagline": "Light, landscapes, and the occasional portrait.",
+    "location": "Portland, OR",
+    "timezone": "GMT−8",
+    "photo": { "src": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=80", "alt": "Devon Carter" },
+    "contact": { "phone": "+1 (503) 555-0117", "email": "devon@cartervisuals.com" },
+    "featured": {
+      "iconKey": "Image",
+      "label": "Photo gallery",
+      "sublabel": "Recent work",
+      "action": {
+        "kind": "section",
+        "section": {
+          "type": "gallery",
+          "title": "Recent work",
+          "images": [
+            { "src": "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=800&q=80", "alt": "Landscape at dusk" },
+            { "src": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80", "alt": "Forest path" },
+            { "src": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80", "alt": "Mountain range" },
+            { "src": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80", "alt": "Foggy hills" },
+            { "src": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80", "alt": "Starry sky" },
+            { "src": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80", "alt": "Deer in field" }
+          ]
+        }
+      }
+    },
+    "contacts": [
+      { "iconKey": "Phone", "label": "Call", "action": { "kind": "tel", "value": "+1 (503) 555-0117" } },
+      { "iconKey": "Mail", "label": "Email", "action": { "kind": "mailto", "value": "devon@cartervisuals.com" } },
+      { "iconKey": "MapPin", "label": "Studio", "action": { "kind": "maps", "query": "Carter Visuals, Portland OR" } }
+    ],
+    "shortcuts": [
+      {
+        "iconKey": "Globe",
+        "label": "Social",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "social",
+            "title": "Social",
+            "items": [
+              { "network": "instagram", "handle": "@carter.visuals", "action": { "kind": "external", "href": "https://instagram.com/carter.visuals" } },
+              { "network": "behance", "handle": "carter", "action": { "kind": "external", "href": "https://behance.net/carter" } },
+              { "network": "youtube", "handle": "@cartervisuals", "action": { "kind": "external", "href": "https://youtube.com/@cartervisuals" } }
+            ]
+          }
+        }
+      },
+      {
+        "iconKey": "Camera",
+        "label": "Full portfolio",
+        "sublabel": "All images",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "gallery",
+            "title": "Portfolio",
+            "images": [
+              { "src": "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=800&q=80", "alt": "Landscape at dusk" },
+              { "src": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80", "alt": "Forest path" },
+              { "src": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80", "alt": "Mountain range" },
+              { "src": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80", "alt": "Foggy hills" },
+              { "src": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80", "alt": "Starry sky" },
+              { "src": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80", "alt": "Deer in field" }
+            ]
+          }
+        }
+      },
+      {
+        "iconKey": "CreditCard",
+        "label": "Pay me",
+        "sublabel": "Deposits & invoices",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "links",
+            "title": "Pay me",
+            "items": [
+              { "iconKey": "Globe", "label": "PayPal", "action": { "kind": "external", "href": "https://paypal.me/cartervisuals" } },
+              { "iconKey": "Globe", "label": "Venmo", "action": { "kind": "external", "href": "https://venmo.com/cartervisuals" } },
+              { "iconKey": "Globe", "label": "Stripe invoice", "action": { "kind": "external", "href": "https://buy.stripe.com/test_devon" } }
+            ]
+          }
+        }
+      }
+    ],
+    "meta": [
+      { "label": "Now", "value": "On assignment", "dot": true },
+      { "label": "Gear", "value": "Leica Q3", "serif": true },
+      { "label": "Prints", "value": "Shop", "external": true, "action": { "kind": "external", "href": "https://cartervisuals.com/shop" } }
+    ]
+  },
+  {
+    "slug": "user3",
+    "theme": "violet",
+    "readability": "shadow",
+    "monogram": "AN",
+    "availability": "Open to freelance",
+    "name": { "first": "Aria", "last": "Nakamura" },
+    "role": "Product Designer",
+    "company": "Independent",
+    "tagline": "Interfaces that feel obvious in hindsight.",
+    "location": "Austin, TX",
+    "timezone": "GMT−6",
+    "photo": { "src": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=1200&q=80", "alt": "Aria Nakamura" },
+    "contact": { "phone": "+1 (512) 555-0188", "email": "hi@arian.design" },
+    "featured": {
+      "iconKey": "FileText",
+      "label": "Download résumé",
+      "sublabel": "PDF · 1 page",
+      "action": { "kind": "download", "href": "/aria-resume.pdf", "filename": "aria-nakamura-resume.pdf" }
+    },
+    "contacts": [
+      { "iconKey": "Phone", "label": "Call", "action": { "kind": "tel", "value": "+1 (512) 555-0188" } },
+      { "iconKey": "Mail", "label": "Email", "action": { "kind": "mailto", "value": "hi@arian.design" } },
+      { "iconKey": "MessageSquare", "label": "Text", "action": { "kind": "sms", "value": "+1 (512) 555-0188" } }
+    ],
+    "shortcuts": [
+      {
+        "iconKey": "Briefcase",
+        "label": "Work & links",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "links",
+            "title": "Work",
+            "items": [
+              { "iconKey": "DribbbleIcon", "label": "Dribbble", "sublabel": "Shots & explorations", "action": { "kind": "external", "href": "https://dribbble.com/arian" } },
+              { "iconKey": "BehanceIcon", "label": "Behance", "sublabel": "Case studies", "action": { "kind": "external", "href": "https://behance.net/arian" } },
+              { "iconKey": "Globe", "label": "Portfolio", "action": { "kind": "external", "href": "https://arian.design" } },
+              { "iconKey": "LinkedInIcon", "label": "LinkedIn", "action": { "kind": "external", "href": "https://linkedin.com/in/arian" } }
+            ]
+          }
+        }
+      },
+      {
+        "iconKey": "Star",
+        "label": "Testimonials",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "info",
+            "title": "Testimonials",
+            "blocks": [
+              { "kind": "quote", "text": "Aria shipped our redesign in six weeks. Conversions are up 30%.", "by": "PM, Fintech startup" },
+              { "kind": "quote", "text": "The most thoughtful designer I've worked with.", "by": "Engineering lead" },
+              { "kind": "quote", "text": "Clear, fast, and a joy to collaborate with.", "by": "Founder" }
+            ]
+          }
+        }
+      },
+      {
+        "iconKey": "Globe",
+        "label": "Social",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "social",
+            "title": "Social",
+            "items": [
+              { "network": "dribbble", "handle": "@arian", "action": { "kind": "external", "href": "https://dribbble.com/arian" } },
+              { "network": "behance", "handle": "arian", "action": { "kind": "external", "href": "https://behance.net/arian" } },
+              { "network": "x", "handle": "@arian_design", "action": { "kind": "external", "href": "https://x.com/arian_design" } }
+            ]
+          }
+        }
+      }
+    ],
+    "meta": [
+      { "label": "Now", "value": "Design systems", "dot": true },
+      { "label": "Tool", "value": "Figma", "serif": true },
+      { "label": "Dribbble", "value": "View", "external": true, "action": { "kind": "external", "href": "https://dribbble.com/arian" } }
+    ]
+  },
+  {
+    "slug": "user4",
+    "theme": "sunset",
+    "readability": "plate",
+    "monogram": "LM",
+    "availability": "Open today",
+    "name": { "first": "Leo", "last": "Martins" },
+    "role": "Chef & Owner",
+    "company": "Casa Martins",
+    "tagline": "Wood-fired plates, natural wine, good company.",
+    "location": "Lisbon",
+    "timezone": "GMT+0",
+    "photo": { "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80", "alt": "Leo Martins" },
+    "contact": { "phone": "+351 21 555 0190", "whatsapp": "+351215550190" },
+    "featured": {
+      "iconKey": "ShoppingBag",
+      "label": "Order now",
+      "sublabel": "Delivery & pickup",
+      "action": { "kind": "external", "href": "https://order.casamartins.pt" }
+    },
+    "contacts": [
+      { "iconKey": "Phone", "label": "Call", "action": { "kind": "tel", "value": "+351 21 555 0190" } },
+      { "iconKey": "WhatsAppIcon", "label": "WhatsApp", "action": { "kind": "whatsapp", "value": "+351215550190", "text": "Hi! I'd like to book a table." } },
+      { "iconKey": "MapPin", "label": "Directions", "action": { "kind": "maps", "query": "Casa Martins, Lisbon" } }
+    ],
+    "shortcuts": [
+      {
+        "iconKey": "FileText",
+        "label": "Menu",
+        "sublabel": "Dinner · PDF",
+        "action": { "kind": "download", "href": "/casa-martins-menu.pdf", "filename": "casa-martins-menu.pdf" }
+      },
+      {
+        "iconKey": "Star",
+        "label": "Price list",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "info",
+            "title": "Price list",
+            "blocks": [
+              { "kind": "stat", "label": "Wood-fired flatbread", "value": "€9" },
+              { "kind": "stat", "label": "Grilled octopus", "value": "€18" },
+              { "kind": "stat", "label": "Chef's tasting", "value": "€55" },
+              { "kind": "stat", "label": "Natural wine (glass)", "value": "€7" }
+            ]
+          }
+        }
+      },
+      {
+        "iconKey": "Clock",
+        "label": "Business hours",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "info",
+            "title": "Hours",
+            "blocks": [
+              { "kind": "stat", "label": "Tue – Thu", "value": "18:00 – 23:00" },
+              { "kind": "stat", "label": "Fri – Sat", "value": "18:00 – 01:00" },
+              { "kind": "stat", "label": "Sun", "value": "13:00 – 22:00" },
+              { "kind": "stat", "label": "Mon", "value": "Closed" }
+            ]
+          }
+        }
+      },
+      {
+        "iconKey": "Globe",
+        "label": "Social",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "social",
+            "title": "Social",
+            "items": [
+              { "network": "instagram", "handle": "@casamartins", "action": { "kind": "external", "href": "https://instagram.com/casamartins" } },
+              { "network": "facebook", "handle": "Casa Martins", "action": { "kind": "external", "href": "https://facebook.com/casamartins" } },
+              { "network": "tiktok", "handle": "@casamartins", "action": { "kind": "external", "href": "https://tiktok.com/@casamartins" } }
+            ]
+          }
+        }
+      }
+    ],
+    "meta": [
+      { "label": "Tonight", "value": "Few tables left", "dot": true },
+      { "label": "Special", "value": "Octopus", "serif": true },
+      { "label": "Reserve", "value": "Book", "external": true, "action": { "kind": "external", "href": "https://book.casamartins.pt" } }
+    ]
+  },
+  {
+    "slug": "user5",
+    "theme": "forest",
+    "readability": "none",
+    "monogram": "SR",
+    "availability": "Taking clients",
+    "name": { "first": "Sofia", "last": "Reyes" },
+    "role": "Leadership Coach",
+    "company": "Reyes Coaching",
+    "tagline": "Helping founders lead without burning out.",
+    "location": "Remote",
+    "timezone": "GMT−5",
+    "photo": { "src": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&q=80", "alt": "Sofia Reyes" },
+    "contact": { "phone": "+1 (646) 555-0173", "email": "sofia@reyes.coach" },
+    "featured": {
+      "iconKey": "Calendar",
+      "label": "Book a free consult",
+      "sublabel": "20 min · no strings",
+      "action": { "kind": "external", "href": "https://calendly.com/reyescoaching/intro" }
+    },
+    "contacts": [
+      { "iconKey": "Phone", "label": "Call", "action": { "kind": "tel", "value": "+1 (646) 555-0173" } },
+      { "iconKey": "Mail", "label": "Email", "action": { "kind": "mailto", "value": "sofia@reyes.coach" } }
+    ],
+    "shortcuts": [
+      {
+        "iconKey": "Download",
+        "label": "Free guide",
+        "sublabel": "\"The Calm Founder\" · PDF",
+        "action": { "kind": "download", "href": "/calm-founder.pdf", "filename": "the-calm-founder.pdf" }
+      },
+      {
+        "iconKey": "Briefcase",
+        "label": "Services",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "info",
+            "title": "Services",
+            "blocks": [
+              { "kind": "heading", "text": "1:1 Coaching" },
+              { "kind": "paragraph", "text": "Biweekly sessions over 3–6 months." },
+              { "kind": "heading", "text": "Team workshops" },
+              { "kind": "list", "items": ["Leadership offsites", "Feedback culture", "Founder–team alignment"] }
+            ]
+          }
+        }
+      },
+      {
+        "iconKey": "Star",
+        "label": "Testimonials",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "info",
+            "title": "What clients say",
+            "blocks": [
+              { "kind": "quote", "text": "Sofia helped me delegate for the first time in years.", "by": "Seed-stage founder" },
+              { "kind": "quote", "text": "Our leadership team finally talks straight.", "by": "Series A CEO" }
+            ]
+          }
+        }
+      },
+      {
+        "iconKey": "HelpCircle",
+        "label": "Request a callback",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "form",
+            "title": "Request a callback",
+            "description": "Leave your number and I'll call within a day.",
+            "submitLabel": "Request callback",
+            "fields": [
+              { "name": "name", "label": "Name", "type": "text", "required": true },
+              { "name": "phone", "label": "Phone", "type": "tel", "required": true }
+            ]
+          }
+        }
+      }
+    ],
+    "meta": [
+      { "label": "Now", "value": "2 spots open", "dot": true },
+      { "label": "Reading", "value": "The Mountain Is You", "serif": true },
+      { "label": "Waitlist", "value": "Join", "external": true, "action": { "kind": "section", "section": { "type": "form", "title": "Join the waitlist", "submitLabel": "Join waitlist", "fields": [{ "name": "email", "label": "Email", "type": "email", "required": true }] } } }
+    ]
+  },
+  {
+    "slug": "user6",
+    "theme": "midnight",
+    "readability": "shadow",
+    "monogram": "NB",
+    "availability": "Available · contract",
+    "name": { "first": "Noah", "last": "Bennett" },
+    "role": "Staff Engineer",
+    "company": "Freelance",
+    "tagline": "Distributed systems, dev tools, and clean APIs.",
+    "location": "Berlin",
+    "timezone": "GMT+1",
+    "photo": { "src": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=80", "alt": "Noah Bennett" },
+    "contact": { "email": "noah@bennett.dev" },
+    "featured": {
+      "iconKey": "Calendar",
+      "label": "Book a meeting",
+      "sublabel": "Cal.com · 30 min",
+      "action": { "kind": "external", "href": "https://cal.com/noahbennett" }
+    },
+    "contacts": [
+      { "iconKey": "Mail", "label": "Email", "action": { "kind": "mailto", "value": "noah@bennett.dev" } },
+      { "iconKey": "GitHubIcon", "label": "GitHub", "action": { "kind": "external", "href": "https://github.com/noahb" } },
+      { "iconKey": "Globe", "label": "Website", "action": { "kind": "external", "href": "https://bennett.dev" } }
+    ],
+    "shortcuts": [
+      {
+        "iconKey": "BookOpen",
+        "label": "Blog",
+        "sublabel": "Notes on systems",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "links",
+            "title": "Blog",
+            "description": "Recent posts",
+            "items": [
+              { "iconKey": "BookOpen", "label": "Idempotency keys done right", "sublabel": "8 min read", "action": { "kind": "external", "href": "https://bennett.dev/idempotency" } },
+              { "iconKey": "BookOpen", "label": "Queues over cron", "sublabel": "6 min read", "action": { "kind": "external", "href": "https://bennett.dev/queues" } },
+              { "iconKey": "BookOpen", "label": "A case for boring tech", "sublabel": "5 min read", "action": { "kind": "external", "href": "https://bennett.dev/boring" } }
+            ]
+          }
+        }
+      },
+      {
+        "iconKey": "FileText",
+        "label": "Résumé",
+        "sublabel": "PDF",
+        "action": { "kind": "download", "href": "/noah-cv.pdf", "filename": "noah-bennett-cv.pdf" }
+      },
+      {
+        "iconKey": "Briefcase",
+        "label": "Services",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "info",
+            "title": "How I help",
+            "blocks": [
+              { "kind": "list", "items": ["Architecture reviews", "Backend & infra builds", "Team mentoring"] },
+              { "kind": "stat", "label": "Rate", "value": "€1,200 / day" }
+            ]
+          }
+        }
+      },
+      {
+        "iconKey": "Globe",
+        "label": "Social",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "social",
+            "title": "Social",
+            "items": [
+              { "network": "github", "handle": "@noahb", "action": { "kind": "external", "href": "https://github.com/noahb" } },
+              { "network": "x", "handle": "@noah_codes", "action": { "kind": "external", "href": "https://x.com/noah_codes" } },
+              { "network": "linkedin", "handle": "in/noahbennett", "action": { "kind": "external", "href": "https://linkedin.com/in/noahbennett" } }
+            ]
+          }
+        }
+      }
+    ],
+    "meta": [
+      { "label": "Now", "value": "Open source", "dot": true },
+      { "label": "Stack", "value": "Rust · Go", "serif": true },
+      { "label": "GitHub", "value": "@noahb", "external": true, "action": { "kind": "external", "href": "https://github.com/noahb" } }
+    ]
+  },
+  {
+    "slug": "user7",
+    "theme": "paper",
+    "readability": "plate",
+    "monogram": "PS",
+    "availability": "Free estimates",
+    "name": { "first": "Priya", "last": "Shah" },
+    "role": "Handywoman",
+    "company": "Shah Home Services",
+    "tagline": "Repairs, decks, and remodels done right.",
+    "location": "Sacramento, CA",
+    "timezone": "GMT−8",
+    "photo": { "src": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80", "alt": "Priya Shah" },
+    "contact": { "phone": "+1 (916) 555-0124", "whatsapp": "+19165550124" },
+    "featured": {
+      "iconKey": "HelpCircle",
+      "label": "Get a free quote",
+      "sublabel": "Reply within a day",
+      "action": {
+        "kind": "section",
+        "section": {
+          "type": "form",
+          "title": "Get a free quote",
+          "description": "Describe the job and I'll send an estimate.",
+          "submitLabel": "Request quote",
+          "fields": [
+            { "name": "name", "label": "Name", "type": "text", "required": true },
+            { "name": "phone", "label": "Phone", "type": "tel", "required": true },
+            { "name": "job", "label": "What needs doing?", "type": "textarea", "required": true }
+          ]
+        }
+      }
+    },
+    "contacts": [
+      { "iconKey": "Phone", "label": "Call", "action": { "kind": "tel", "value": "+1 (916) 555-0124" } },
+      { "iconKey": "WhatsAppIcon", "label": "WhatsApp", "action": { "kind": "whatsapp", "value": "+19165550124" } },
+      { "iconKey": "MapPin", "label": "Service area", "action": { "kind": "maps", "query": "Sacramento, CA" } }
+    ],
+    "shortcuts": [
+      {
+        "iconKey": "Images",
+        "label": "Before & after",
+        "sublabel": "Recent jobs",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "gallery",
+            "title": "Before & after",
+            "images": [
+              { "src": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80", "alt": "Before — worn deck" },
+              { "src": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80", "alt": "After — restored deck" },
+              { "src": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80", "alt": "Before — old fence" },
+              { "src": "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=800&q=80", "alt": "After — new fence" }
+            ]
+          }
+        }
+      },
+      {
+        "iconKey": "FileText",
+        "label": "Price list",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "info",
+            "title": "Typical pricing",
+            "blocks": [
+              { "kind": "stat", "label": "Hourly", "value": "$75" },
+              { "kind": "stat", "label": "Deck repair (avg)", "value": "$1,200" },
+              { "kind": "stat", "label": "Fence (per ft)", "value": "$45" },
+              { "kind": "paragraph", "text": "Every quote is custom — these are ballparks." }
+            ]
+          }
+        }
+      },
+      {
+        "iconKey": "Phone",
+        "label": "Request a callback",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "form",
+            "title": "Request a callback",
+            "submitLabel": "Call me back",
+            "fields": [
+              { "name": "name", "label": "Name", "type": "text", "required": true },
+              { "name": "phone", "label": "Phone", "type": "tel", "required": true }
+            ]
+          }
+        }
+      }
+    ],
+    "meta": [
+      { "label": "Now", "value": "Booking next week", "dot": true },
+      { "label": "Rated", "value": "4.9 ★", "serif": true },
+      { "label": "Reviews", "value": "Read", "external": true, "action": { "kind": "external", "href": "https://g.page/shah-home" } }
+    ]
+  },
+  {
+    "slug": "user8",
+    "theme": "mono",
+    "readability": "shadow",
+    "monogram": "KA",
+    "availability": "New EP out now",
+    "name": { "first": "Kai", "last": "Anderson" },
+    "role": "Musician",
+    "company": "Independent",
+    "tagline": "Bedroom pop for late nights and long drives.",
+    "location": "Los Angeles",
+    "timezone": "GMT−8",
+    "photo": { "src": "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?auto=format&fit=crop&w=1200&q=80", "alt": "Kai Anderson" },
+    "contact": { "email": "booking@kaimusic.com" },
+    "featured": {
+      "iconKey": "Music",
+      "label": "Listen now",
+      "sublabel": "Spotify · Apple Music",
+      "action": { "kind": "external", "href": "https://open.spotify.com/artist/kai" }
+    },
+    "contacts": [
+      { "iconKey": "YouTubeIcon", "label": "YouTube", "action": { "kind": "external", "href": "https://youtube.com/@kaimusic" } },
+      { "iconKey": "TikTokIcon", "label": "TikTok", "action": { "kind": "external", "href": "https://tiktok.com/@kaimusic" } },
+      { "iconKey": "Mail", "label": "Booking", "action": { "kind": "mailto", "value": "booking@kaimusic.com", "subject": "Booking inquiry" } }
+    ],
+    "shortcuts": [
+      {
+        "iconKey": "Globe",
+        "label": "Social",
+        "sublabel": "All platforms",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "social",
+            "title": "Follow Kai",
+            "items": [
+              { "network": "youtube", "handle": "@kaimusic", "action": { "kind": "external", "href": "https://youtube.com/@kaimusic" } },
+              { "network": "tiktok", "handle": "@kaimusic", "action": { "kind": "external", "href": "https://tiktok.com/@kaimusic" } },
+              { "network": "instagram", "handle": "@kai", "action": { "kind": "external", "href": "https://instagram.com/kai" } },
+              { "network": "x", "handle": "@kaimusic", "action": { "kind": "external", "href": "https://x.com/kaimusic" } }
+            ]
+          }
+        }
+      },
+      {
+        "iconKey": "Ticket",
+        "label": "Tour dates",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "info",
+            "title": "Upcoming shows",
+            "blocks": [
+              { "kind": "stat", "label": "Jun 18 · LA", "value": "The Echo" },
+              { "kind": "stat", "label": "Jun 24 · SF", "value": "Rickshaw Stop" },
+              { "kind": "stat", "label": "Jul 02 · Portland", "value": "Doug Fir" }
+            ]
+          }
+        }
+      },
+      {
+        "iconKey": "Mic",
+        "label": "Join the waitlist",
+        "sublabel": "Early access to drops",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "form",
+            "title": "Join the waitlist",
+            "description": "Be first to hear new releases.",
+            "submitLabel": "Join waitlist",
+            "fields": [{ "name": "email", "label": "Email", "type": "email", "required": true }]
+          }
+        }
+      }
+    ],
+    "meta": [
+      { "label": "Now", "value": "New EP: Halo", "dot": true },
+      { "label": "Mood", "value": "Nocturne", "serif": true },
+      { "label": "Merch", "value": "Shop", "external": true, "action": { "kind": "external", "href": "https://shop.kaimusic.com" } }
+    ]
+  },
+  {
+    "slug": "user9",
+    "theme": "ajrak",
+    "readability": "plate",
+    "monogram": "ZM",
+    "availability": "Available for commissions",
+    "name": { "first": "Zara", "last": "Mirza" },
+    "role": "Textile Artist & Storyteller",
+    "company": "Studio Zara",
+    "tagline": "Patterns rooted in memory. Craft woven from land.",
+    "location": "Karachi · London",
+    "timezone": "GMT+5 / GMT+1",
+    "photo": { "src": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=1200&q=80", "alt": "Zara Mirza" },
+    "contact": { "phone": "+92 300 555 0177", "email": "zara@studiozara.com", "whatsapp": "+923005550177" },
+    "featured": {
+      "iconKey": "Users",
+      "label": "About me",
+      "sublabel": "My story · craft · journey",
+      "action": {
+        "kind": "section",
+        "section": {
+          "type": "story",
+          "title": "I am Zara Mirza",
+          "subtitle": "Textile artist. Storyteller. Keeper of patterns.",
+          "heroImage": {
+            "src": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80",
+            "alt": "Intricate ajrak patterns spread across a studio table"
+          },
+          "blocks": [
+            { "kind": "paragraph", "text": "I grew up in Karachi, where the streets smell of jasmine in the evening and the bazaars overflow with colour. My grandmother's hands were always stained with indigo. She never called what she did 'art' — she called it remembering." },
+            { "kind": "image", "src": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=1200&q=80", "alt": "Hands pressing a carved wooden block into crimson-dyed fabric", "caption": "Block-printing in the family workshop, Hyderabad, 2019" },
+            { "kind": "heading", "text": "The craft" },
+            { "kind": "paragraph", "text": "Ajrak is a centuries-old resist-printing technique from Sindh — a dialogue between the maker and the material. Each cloth passes through seventeen stages of dyeing, drying, and washing before it is ready. You cannot rush it. The land and the light decide the colour." },
+            { "kind": "quote", "text": "A pattern is not decoration. It is a map of belonging.", "by": "Zara Mirza" },
+            { "kind": "divider" },
+            { "kind": "subheading", "text": "London chapter" },
+            { "kind": "paragraph", "text": "I moved to London in 2018 to study at the Royal College of Art. I arrived with two suitcases and a roll of cloth. The city was grey and cold and completely indifferent to jasmine. I fell in love with it immediately." },
+            { "kind": "paragraph", "text": "My practice now lives between two cities. The dye vats are in Karachi; the loom is in Hackney. The work is about that distance — the thread that stretches across water and does not break." },
+            { "kind": "image", "src": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80", "alt": "A finished ajrak cloth pinned to a white studio wall", "caption": "Studio Zara, Hackney, 2024" },
+            { "kind": "heading", "text": "Commissions & collaborations" },
+            { "kind": "paragraph", "text": "I work with individuals, fashion houses, and cultural institutions. Each commission begins with a conversation — about memory, place, and what you want the cloth to carry. Pieces take six to fourteen weeks." },
+            { "kind": "divider" },
+            { "kind": "paragraph", "text": "If any of this resonates, write to me. I read every message. Sometimes slowly, but always eventually." }
+          ]
+        }
+      }
+    },
+    "contacts": [
+      {
+        "iconKey": "Phone",
+        "label": "Contact",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "links",
+            "title": "Contact",
+            "description": "Reach Zara directly",
+            "items": [
+              { "iconKey": "Mail", "label": "Email", "sublabel": "zara@studiozara.com", "action": { "kind": "mailto", "value": "zara@studiozara.com" } },
+              { "iconKey": "WhatsAppIcon", "label": "WhatsApp", "sublabel": "+92 300 555 0177", "action": { "kind": "whatsapp", "value": "+923005550177", "text": "Hi Zara, I came across your work and would love to connect." } },
+              { "iconKey": "Phone", "label": "Call", "sublabel": "+92 300 555 0177", "action": { "kind": "tel", "value": "+92 300 555 0177" } }
+            ]
+          }
+        }
+      },
+      {
+        "iconKey": "InstagramIcon",
+        "label": "Social",
+        "action": {
+          "kind": "section",
+          "section": {
+            "type": "social",
+            "title": "Follow the work",
+            "description": "Studio updates, process videos, and the occasional poem",
+            "items": [
+              { "network": "instagram", "handle": "@studiozara", "action": { "kind": "external", "href": "https://instagram.com/studiozara" } },
+              { "network": "x", "handle": "@zara_mirza", "action": { "kind": "external", "href": "https://x.com/zara_mirza" } },
+              { "network": "linkedin", "handle": "in/zara-mirza", "action": { "kind": "external", "href": "https://linkedin.com/in/zara-mirza" } }
+            ]
+          }
+        }
+      },
+      { "iconKey": "Globe", "label": "Visit", "action": { "kind": "external", "href": "https://studiozara.com" } }
+    ],
+    "shortcuts": []
+  }
+]
